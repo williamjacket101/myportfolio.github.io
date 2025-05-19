@@ -1,63 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaid Mehboob's Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SM Zaid Mehboob - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Header Section -->
-    <header id="header">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Zaid Mehboob, a passionate web developer with expertise in web technologies and UI/UX design.</p>
-    </header>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a web developer with a passion for creating user-friendly websites. I specialize in UI/UX design and
-            responsive web development.</p>
-        <p>Check out my work below, and feel free to connect with me on <a href="https://pk.linkedin.com/in/sm-zaid-mehboob" target="_blank">LinkedIn</a>.</p>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Services</h2>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>SM Zaid Mehboob</h1>
+      <p>Full Stack Developer | Software Engineer</p>
+      <nav>
         <ul>
-            <li>Responsive Web Design</li>
-            <li>UI/UX Design</li>
-            <li>Web Development (HTML, CSS, JavaScript)</li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Here are some of the projects I have worked on:</p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="bio">
+        <img src="zaid-profile.jpg" alt="SM Zaid Mehboob" class="profile-img">
+        <p>Hello! I’m SM Zaid Mehboob, a passionate Full Stack Developer with over 5 years of experience in building web applications and software solutions. My expertise spans from front-end to back-end technologies, and I am always eager to learn and grow within the tech space.</p>
+        <p>Here’s a quick overview of my professional background:</p>
         <ul>
-            <li><a href="https://github.com/zaidmehboob" target="_blank">Project 1: Personal Portfolio</a></li>
-            <li><a href="https://github.com/zaidmehboob" target="_blank">Project 2: E-commerce Website</a></li>
+          <li><strong>Education:</strong> Bachelor’s in Computer Science from ABC University</li>
+          <li><strong>Skills:</strong> HTML, CSS, JavaScript, Node.js, React, SQL, MongoDB</li>
+          <li><strong>Location:</strong> Karachi, Pakistan</li>
         </ul>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Testimonial Section -->
-    <section id="testimonial">
-        <h2>Testimonials</h2>
-        <p>"Zaid is a talented web developer who consistently delivers high-quality projects. His work is not only functional but also beautifully designed." – [Client Name]</p>
-    </section>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p>Here are some of the projects I’ve worked on:</p>
+      <div class="projects">
+        <div class="project">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>Project Name 1</h3>
+          <p>Short description of the project or achievement here.</p>
+        </div>
+        <div class="project">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Project Name 2</h3>
+          <p>Short description of the project or achievement here.</p>
+        </div>
+        <!-- More projects can be added here -->
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer id="footer">
-        <ul>
-            <li><a href="https://pk.linkedin.com/in/sm-zaid-mehboob" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/zaidmehboob" target="_blank">GitHub</a></li>
-        </ul>
-    </footer>
+  <!-- Awards Section -->
+  <section id="awards" class="awards">
+    <div class="container">
+      <h2>Awards & Achievements</h2>
+      <ul>
+        <li><strong>Best Developer Award</strong> - XYZ Company, 2023</li>
+        <li><strong>Hackathon Winner</strong> - ABC Tech Conference, 2022</li>
+        <li><strong>Excellence in Software Engineering</strong> - DEF University, 2021</li>
+        <!-- Add more awards as necessary -->
+      </ul>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 SM Zaid Mehboob. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
